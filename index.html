@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JRobots - Make Your Home Smarter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Syne:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <div class="logo">JRobots</div>
+        <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="search-container">
+                <i class="ri-search-line search-icon-svg"></i>
+                <input type="text" placeholder="Search..." class="search-input">
+            </div>
+            <!-- <span class="search-icon">🔍</span> Replaced -->
+            <span class="cart-icon">🛒</span>
+            <a href="#" class="btn-buy">Buy Now</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Make Your Home<br><span class="highlight">Smarter</span></h1>
+        <p class="subtitle">Discover a new era of home assistance with advanced robots designed to simplify your daily
+            tasks.</p>
+        <a href="#" class="btn-cta">Shop Now ➔</a>
+
+        <!-- Placeholder for the 3D Drone Image which failed to generate -->
+        <div class="hero-image-container">
+            <img src="assets/1.png" alt="Drone Robot" class="hero-robot-img">
+        </div>
+
+
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="stats-row">
+            <div class="floating-gem gem-1"></div>
+            <div class="floating-gem gem-2"></div>
+            <div class="floating-gem gem-3"></div>
+
+            <div class="stat">
+                <h3>47K</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat">
+                <h3>173</h3>
+                <p>Unique Models</p>
+            </div>
+            <div class="stat-text">
+                <h4>About us</h4>
+                <p>We specialize in creating home assistant robots that blend innovation, functionality, and style.</p>
+            </div>
+        </div>
+
+        <div class="about-header">
+            <h2>Redefining <span class="purple-text">Home Robotics</span></h2>
+            <p>At JRobots, we don't just build machines; we create intelligent companions that integrate seamlessly into
+                your life, bringing the future of convenience to your doorstep today.</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="about-icon"><i class="ri-lightbulb-flash-line"></i></div>
+                <h3>Innovation First</h3>
+                <p>Pushing the boundaries of AI navigation and robotic dexterity to handle delicate tasks with
+                    human-like care.</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon"><i class="ri-plant-line"></i></div>
+                <h3>Sustainable Tech</h3>
+                <p>Designed with eco-friendly materials and energy-efficient power management systems to protect our
+                    planet.</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon"><i class="ri-customer-service-2-line"></i></div>
+                <h3>24/7 Support</h3>
+                <p>Our dedicated team and developing community ensures your robot is always running at peak performance.
+                </p>
+            </div>
+        </div>
+
+
+
+        <!-- Core Metrics -->
+        <div class="core-metrics">
+            <!-- Reuse floating gem classes from Stats -->
+            <div class="floating-gem gem-1" style="left: 10%; top: -10%;"></div>
+            <div class="floating-gem gem-3" style="right: 5%; bottom: -10%;"></div>
+
+            <!-- Productive (Cyan) -->
+            <div class="metric-item">
+                <div class="metric-chart c-cyan">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle-bg"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle" stroke-dasharray="75, 100"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                    <div class="chart-center">
+                        <div class="chart-slice"></div>
+                    </div>
+                </div>
+                <div class="metric-text">
+                    <h3>PRODUCTIVE</h3>
+                    <p>Designed to handle your household needs efficiently and save you valuable time.</p>
+                </div>
+            </div>
+
+            <!-- Reliability (Purple) -->
+            <div class="metric-item">
+                <div class="metric-chart c-purple">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle-bg"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle" stroke-dasharray="60, 100"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                    <div class="chart-center"></div>
+                </div>
+                <div class="metric-text">
+                    <h3>RELIABILITY</h3>
+                    <p>Built to perform consistently in any condition, ensuring peace of mind always.</p>
+                </div>
+            </div>
+
+            <!-- Cheaper (Magenta) -->
+            <div class="metric-item">
+                <div class="metric-chart c-magenta">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle-bg"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle" stroke-dasharray="85, 100"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                    <div class="chart-center"></div>
+                </div>
+                <div class="metric-text">
+                    <h3>COST EFFECTIVE</h3>
+                    <p>Offering premium features at a price point more accessible than competitors.</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- About Timeline Section -->
+    <section class="about-timeline">
+        <h2>Our Journey</h2>
+        <div class="timeline-container">
+            <!-- SVG Wave Line -->
+            <svg class="timeline-svg" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none">
+                <path d="M0,100 C150,100 200,20 300,20 S450,130 600,130 S750,20 900,20 S1050,100 1200,100" />
+            </svg>
+
+            <div class="timeline-items">
+                <!-- 2019 -->
+                <div class="t-item t-top" style="left: 25%;">
+                    <div class="t-date">January, 2019</div>
+                    <div class="t-dot"></div>
+                    <div class="t-content">
+                        <h4>Inception</h4>
+                        <p>Founded with a vision to redefine home robotics.</p>
+                    </div>
+                </div>
+
+                <!-- 2020 -->
+                <div class="t-item t-bottom" style="left: 50%;">
+                    <div class="t-content">
+                        <h4>First Prototype</h4>
+                        <p>Launched the Alpha Clean series for early adopters.</p>
+                    </div>
+                    <div class="t-dot"></div>
+                    <div class="t-date">January, 2020</div>
+                </div>
+
+                <!-- 2021 -->
+                <div class="t-item t-top" style="left: 75%;">
+                    <div class="t-date">January, 2021</div>
+                    <div class="t-dot"></div>
+                    <div class="t-content">
+                        <h4>Expansion</h4>
+                        <p>Opened global shipping and expanded product line.</p>
+                    </div>
+                </div>
+
+                <!-- 2022 -->
+                <div class="t-item t-bottom" style="left: 95%;">
+                    <!-- Adjusted manually for visual balance -->
+                    <div class="t-content">
+                        <h4>Smart AI</h4>
+                        <p>Integrated advanced AI for autonomous learning.</p>
+                    </div>
+                    <div class="t-dot"></div>
+                    <div class="t-date">January, 2022</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-sellers">
+        <h2>Our best sellers</h2>
+        <div class="slider-wrapper">
+            <button class="slider-btn prev-btn">❮</button>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image-box">
+                        <div class="favorite-icon"><i class="ri-heart-line"></i></div>
+                        <img src="assets/Caretaker Robot.png" alt="Caretaker Robot">
+                    </div>
+                    <div class="card-info">
+                        <h4>Caretaker Robot</h4>
+                        <p class="price">$245.00</p>
+                        <button class="btn-icon">
+                            <i class="ri-shopping-bag-3-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-box">
+                        <div class="favorite-icon"><i class="ri-heart-line"></i></div>
+                        <img src="assets/Chef Robot.png" alt="Chef Robot">
+                    </div>
+                    <div class="card-info">
+                        <h4>Chef Robot</h4>
+                        <p class="price">$2,500</p>
+                        <button class="btn-icon">
+                            <i class="ri-shopping-bag-3-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-box">
+                        <div class="favorite-icon"><i class="ri-heart-line"></i></div>
+                        <img src="assets/Repairer Robot.png" alt="Repairer Robot">
+                    </div>
+                    <div class="card-info">
+                        <h4>Repairer Robot</h4>
+                        <p class="price">$3,700</p>
+                        <button class="btn-icon">
+                            <i class="ri-shopping-bag-3-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-box">
+                        <div class="favorite-icon"><i class="ri-heart-line"></i></div>
+                        <img src="assets/Garbage Sorter Robot.png" alt="Garbage Sorter Robot">
+                    </div>
+                    <div class="card-info">
+                        <h4>Garbage Sorter Robot</h4>
+                        <p class="price">$1,200</p>
+                        <button class="btn-icon">
+                            <i class="ri-shopping-bag-3-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-box">
+                        <div class="favorite-icon"><i class="ri-heart-line"></i></div>
+                        <img src="assets/Cleaning Robot.png" alt="Cleaning Robot">
+                    </div>
+                    <div class="card-info">
+                        <h4>Cleaning Robot</h4>
+                        <p class="price">$1,500</p>
+                        <button class="btn-icon">
+                            <i class="ri-shopping-bag-3-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn next-btn">❯</button>
+        </div>
+
+    </section>
+
+    <section class="features">
+        <div class="feature-content">
+            <div class="robot-preview">
+                <img src="assets/Key features & benefits.png" alt="Key Features Robot">
+            </div>
+            <div class="feature-text">
+                <span>Why choose us?</span>
+                <h2>Key features & benefits</h2>
+
+                <div class="feature-item">
+                    <h3>Innovative Design</h3>
+                    <p>Modern aesthetics that fit seamlessly into any interior.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Versatile Functionality</h3>
+                    <p>Each robot performs multiple tasks to make your life easier.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Durable & Long-lasting</h3>
+                    <p>Built with high-quality materials for extended use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="cta-banner">
+        <h2>GET UP TO <span class="purple-text">25% OFF</span> YOUR<br>PERFECT HOME ASSISTANT<br>TODAY!</h2>
+        <a href="#" class="btn-white">Claim Your Discount ➔</a>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p class="contact-subtitle">Have questions? We'd love to hear from you.</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <div class="col">
+                <h4>JRobots</h4>
+                <p>© Copyright JRobots 2025</p>
+            </div>
+            <div class="col">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Products</a>
+            </div>
+            <div class="col">
+                <h4>Info</h4>
+                <a href="#">Blog</a>
+                <a href="#">Contacts</a>
+            </div>
+            <div class="col newsletter">
+                <p>Curious about new developments and updates? Sign up for our newsletter!</p>
+                <div class="socials">
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-x-line"></i></a>
+                    <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
